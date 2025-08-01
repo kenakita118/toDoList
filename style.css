@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+:root {
+	--lg-font-size: 2rem;
+	--md-font-size: 1.2rem;
+	--sm-font-size: 1rem;
+}
+
+h1 {
+	font-size: var(--lg-font-size);
+	margin-bottom: 1rem;
+}
+
+body {
+	background-color: rgb(227, 227, 227);
+}
+
+section {
+	padding: 20px 50px 20px;
+}
+
+section.toDoList {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.toDoList__form {
+	display: flex;
+	height: 100%;
+	gap: 5px;
+	align-items: center;
+}
+
+.form__input {
+	border: 0px;
+	border-radius: 5px;
+	font-size: var(--sm-font-size);
+	padding: 0.5rem 1rem;
+	height: 100%;
+}
+
+.form__input:focus {
+	outline: none;
+}
+
+.btn {
+	background-color: rgb(118, 207, 118);
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 5px;
+	font-size: var(--sm-font-size);
+	height: 100%;
+}
+
+.btn:hover {
+	background-color: rgb(74, 170, 111);
+}
+
+.toDoList__container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+.toDoList__card {
+	display: flex;
+	padding: 1rem 3rem;
+	background-color: white;
+	justify-content: space-between;
+	min-width: 200px;
+}
